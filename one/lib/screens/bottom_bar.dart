@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:one/screens/home_page.dart';
 
 class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
@@ -10,9 +10,9 @@ class BottomBar extends StatefulWidget {
 }
 
 class _BottomBarState extends State<BottomBar> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
   static final List<Widget> _WidgetOptions = <Widget>[
-    const Text("Home"),
+    HomePage(),
     const Text("Search"),
     const Text("Bookings"),
     const Text("Profile"),
@@ -27,9 +27,9 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Online Booking"),
-      ),
+      // appBar: AppBar(
+      //   title: const Text("Online Booking"),
+      // ),
       body: Center(
         child: _WidgetOptions[_selectedIndex],
       ),
@@ -40,6 +40,7 @@ class _BottomBarState extends State<BottomBar> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         selectedItemColor: Colors.blue,
+        type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.blueGrey,
         items: const [
           BottomNavigationBarItem(
