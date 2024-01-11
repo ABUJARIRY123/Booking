@@ -29,9 +29,11 @@ class EventsView extends StatelessWidget {
                     "Dawa",
                     style: Styles.headLineStyle3.copyWith(color: Colors.white),
                   ),
-                  const Spacer(),
+                  Expanded(child: Container()),
                   const ThickContainer(),
-                  const Spacer(),
+                  Expanded(child: Container()),
+                  const ThickContainer(),
+                  Expanded(child: Container()),
                   Text(
                     "Surgical",
                     style: Styles.headLineStyle3.copyWith(color: Colors.white),
