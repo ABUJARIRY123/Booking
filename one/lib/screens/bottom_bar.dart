@@ -12,7 +12,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static final List<Widget> _WidgetOptions = <Widget>[
-    HomePage(),
+    const HomePage(),
     const Text("Search"),
     const Text("Bookings"),
     const Text("Profile"),

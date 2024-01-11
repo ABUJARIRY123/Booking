@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:one/screens/events_view.dart';
 import 'package:one/styles/app_styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
+import 'package:gap/gap.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -80,8 +82,9 @@ class HomePage extends StatelessWidget {
                 )
               ],
             ),
-          )
-          
+          ),
+          const Gap(20),
+          const EventsView(),
         ],
       ),
     );
